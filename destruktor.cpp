@@ -22,10 +22,10 @@ angka::angka(int i) // constructor
     isiData();
 }
 
-angka::cetakData()
+angka::cetakData() // destructor
 {
-    for (int i = 1; i <= panjang; i++)
-    {
-        cout << i << " = " << arr[i] << endl;
-    }
+    cout << endl;
+    cetakData();
+    delete[] arr;
+    cout << "alamat array sudah dilepaskan" << endl;
 }
