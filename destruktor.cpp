@@ -21,3 +21,11 @@ angka::angka(int i) // constructor
     arr = new int[i];
     isiData();
 }
+
+angka::cetakData()
+{
+    for (int i = 1; i <= panjang; i++)
+    {
+        cout << i << " = " << arr[i] << endl;
+    }
+}
