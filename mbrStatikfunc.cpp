@@ -17,3 +17,5 @@ public:
     static int getNim() { return nim; /*Definisi Function*/ }
     mahasiswa(string pnama) : nama(pnama) { setID(); }
 };
+
+int mahasiswa::nim = 0;
